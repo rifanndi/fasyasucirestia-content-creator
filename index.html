@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fasya Suci Restia - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+      :root {
+        --pink-main: #ff4d94;
+        --pink-light: #fff0f6;
+        --pink-dark: #d1105a;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+        overflow-x: hidden;
+      }
+      .font-creative {
+        font-family: "Playfair Display", serif;
+      }
+      .typing-text::after {
+        content: "";
+        border-right: 3px solid var(--pink-main);
+        animation: blink 0.7s infinite;
+      }
+      @keyframes blink {
+        50% {
+          border-color: transparent;
+        }
+      }
+      .text-pink-main {
+        color: var(--pink-main);
+      }
+      .bg-pink-main {
+        background-color: var(--pink-main);
+      }
+      .bg-pink-light {
+        background-color: var(--pink-light);
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 77, 148, 0.1);
+      }
+      .image-box {
+        position: relative;
+        border-radius: 40px 10px 40px 10px;
+        overflow: hidden;
+        transition: 0.5s;
+        aspect-ratio: 4/5;
+      }
+      .image-box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(255, 77, 148, 0.2);
+      }
+      .skills-tags span {
+        background: white;
+        color: var(--pink-main);
+        border: 1.5px solid var(--pink-main);
+        padding: 5px 15px;
+        border-radius: 50px;
+        font-size: 0.8rem;
+        transition: 0.3s;
+      }
+      .skills-tags span:hover {
+        background: var(--pink-main);
+        color: white;
+      }
+      .floating {
+        animation: floating 3s ease-in-out infinite;
+      }
+      @keyframes floating {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-15px);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-white text-slate-800">
+    <nav
+      class="flex justify-between items-center px-6 md:px-12 py-6 sticky top-0 bg-white/80 backdrop-blur-md z-50"
+    >
+      <div class="text-3xl font-bold font-creative">
+        Fasya<span class="text-pink-main">.</span>
+      </div>
+      <ul class="hidden md:flex gap-8 font-medium">
+        <li><a href="#" class="text-pink-main">Home</a></li>
+        <li>
+          <a href="#about" class="hover:text-pink-main transition">About</a>
+        </li>
+        <li>
+          <a href="#works" class="hover:text-pink-main transition"
+            >Experience</a
+          >
+        </li>
+      </ul>
+      <button
+        class="bg-pink-main text-white px-6 py-2 rounded-full font-semibold hover:bg-pink-700 transition shadow-lg shadow-pink-200"
+      >
+        Contact Me
+      </button>
+    </nav>
+
+    <section
+      id="about"
+      class="flex flex-col md:flex-row items-center px-6 md:px-20 py-12 md:py-24 bg-pink-light"
+    >
+      <div class="flex-1 space-y-6" data-aos="fade-right">
+        <h3
+          class="text-pink-main text-xl font-semibold tracking-widest uppercase"
+        >
+          Creator
+        </h3>
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+          Fasya Suci <br />
+          <span class="font-creative italic text-pink-main">Restia</span>
+        </h1>
+        <h2 class="text-2xl md:text-3xl font-medium text-slate-600">
+          I'm a <span id="typing" class="typing-text text-pink-dark"></span>
+        </h2>
+        <p class="text-slate-500 max-w-lg leading-relaxed text-justify">
+          Lulusan Ilmu Komunikasi UIN Sunan Gunung Djati Bandung yang suportif
+          dan komunikatif. Berpengalaman dalam menghidupkan brand melalui
+          <b>Live Streaming</b> dan konten kreatif yang persuasif.
+        </p>
+        <div class="flex gap-4 pt-4">
+          <button
+            class="bg-pink-main text-white px-8 py-4 rounded-xl font-bold shadow-xl shadow-pink-200 hover:scale-105 transition"
+          >
+             <a href=" https://drive.google.com/drive/folders/1yccbYpOpJDOYQH7Sl7p7rYE54knPDVDv">  Download CV</a>
+          </button>
+          <a
+            href="https://drive.google.com/file/d/1J1kivjqThczUFznNd8nXEPfS4w5MDLVp/view?usp=drivesdk"
+            class="border-2 border-pink-main text-pink-main px-8 py-4 rounded-xl font-bold hover:bg-pink-main hover:text-white transition inline-block"
+          >
+            View Works
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="relative flex-1 flex justify-center mt-16 md:mt-0"
+        data-aos="zoom-in"
+      >
+        <div
+          class="absolute w-[300px] h-[300px] md:w-[450px] md:h-[450px] bg-pink-main rounded-full opacity-10 floating"
+        ></div>
+        <img
+          src="img/fasya suci restia .png"
+          alt="Fasya Portrait"
+          class="relative z-10 w-64 md:w-80 h-auto rounded-[60px] border-8 border-white shadow-2xl"
+        />
+      </div>
+    </section>
+
+    <div
+      class="max-w-5xl mx-auto glass-card rounded-3xl py-10 px-6 shadow-2xl flex flex-wrap justify-around items-center -mt-16 relative z-20"
+      data-aos="fade-up"
+    >
+      <div class="flex flex-col items-center p-4">
+        <span class="text-3xl mb-2">🎤</span>
+        <p class="font-bold text-2xl">Host Live</p>
+        <p class="text-slate-400 text-sm">Expertise</p>
+      </div>
+      <div class="w-px h-12 bg-pink-100 hidden md:block"></div>
+      <div class="flex flex-col items-center p-4">
+        <span class="text-3xl mb-2">🎬</span>
+        <p class="font-bold text-2xl">Creative</p>
+        <p class="text-slate-400 text-sm">Content</p>
+      </div>
+      <div class="w-px h-12 bg-pink-100 hidden md:block"></div>
+      <div class="flex flex-col items-center p-4">
+        <span class="text-3xl mb-2">🎙️</span>
+        <p class="font-bold text-2xl">Voice Over</p>
+        <p class="text-slate-400 text-sm">Professional</p>
+      </div>
+    </div>
+
+    <section id="works" class="px-6 md:px-20 py-24 space-y-32">
+      <div class="space-y-16">
+        <h2
+          class="text-center text-4xl font-bold font-creative italic text-pink-dark"
+          data-aos="fade-up"
+        >
+          Host Live
+        </h2>
+
+        <div
+          class="flex flex-col md:flex-row items-center gap-12 md:gap-24"
+          data-aos="fade-up"
+        >
+          <div class="flex-1 order-2 md:order-1">
+            <h4 class="text-pink-main font-bold tracking-widest uppercase mb-4">
+              Zahratu Hijab
+            </h4>
+            <h2 class="text-3xl font-bold mb-6">Live Streaming Specialist</h2>
+            <p class="text-slate-600 leading-relaxed mb-6 text-justify">
+             Mengelola sesi live interaktif untuk
+memperkenalkan keunggulan
+produk dan tren hijab terbaru dari
+Zahratu Hijab. 
+
+<br/>
+Fokus utama saya adalah
+menciptakan pengalaman belanja
+yang menyenangkan bagi audiens
+melalui demonstrasi produk yang
+detail dan cara berkomunikasi yang
+ramah serta informatif.
+            </p>
+            <div class="skills-tags flex flex-wrap gap-3">
+              <span>#LiveSelling</span>
+
+              <span>#ProductDemonstration</span>
+            </div>
+          </div>
+          <div class="flex-1 order-1 md:order-2">
+            <div
+              class="image-box bg-slate-100 flex items-center justify-center text-slate-400"
+            >
+              <span><img src="img/Host Live.png" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+         <div class="space-y-16">
+        <h2
+          class="text-center text-4xl font-bold font-creative italic text-pink-dark"
+          data-aos="fade-up"
+        >
+          Content Creaotor
+        </h2>
+      <div class="space-y-24">
+        <div
+          class="flex flex-col md:flex-row items-center gap-12 md:gap-24"
+          data-aos="fade-up"
+        >
+          <div class="flex-1 w-full">
+            <div
+              class="image-box bg-slate-100 flex items-center justify-center text-slate-400 aspect-video rounded-xl"
+            >
+             <span><img src="img/kj.png" alt=""></span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h4 class="text-pink-main font-bold tracking-widest uppercase mb-4">
+              Chiffon
+
+Kenangan Jogja
+            </h4>
+            <h2 class="text-3xl font-bold mb-6">Social Media Strategy & Content Creaotor</h2>
+            <p class="text-slate-600 leading-relaxed mb-6 text-justify">
+            Selama satu tahun, saya bertanggung jawab
+penuh dalam merancang dan memproduksi
+konten kreatif untuk memperkuat branding
+digital Chiffon Kenangan Jogja.
+
+
+Saya mengelola proses produksi dari ide hingga
+eksekusi visual, termasuk menyusun strategi
+kampanye musiman yang menarik dan efektif
+dalam meningkatkan interaksi audiens.
+            </p>
+            <div class="skills-tags flex flex-wrap gap-3">
+              <span>#CreativeDirection</span><span>#VideoEditing</span
+              ><span>#TrendAnalysis</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-24"
+          data-aos="fade-up"
+        >
+          <div class="flex-1 w-full">
+            <div
+              class="image-box bg-slate-100 flex items-center justify-center text-slate-400 aspect-video rounded-xl"
+            >
+             <span><img src="img/Host Live.png" alt=""></span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h4 class="text-pink-main font-bold tracking-widest uppercase mb-4">
+              Zahratu Hijab
+            </h4>
+            <h2 class="text-3xl font-bold mb-6">Content Creator & Host</h2>
+            <p class="text-slate-600 leading-relaxed mb-6 text-justify">
+           Bertanggung jawab dalam merancang dan
+memproduksi konten kreatif untuk koleksi fashion
+muslim Zahratu Hijab. 
+
+
+Saya mengelola seluruh proses produksi, mulai dari
+ideasi hingga eksekusi visual, dengan fokus pada tren
+hijab terkini guna memperkuat daya tarik brand dan
+membangun interaksi yang kuat dengan audiens
+            </p>
+            <div class="skills-tags flex flex-wrap gap-3">
+              <span>#LiveStreaming</span><span>#PublicSpeaking</span
+              ><span>#Copywriting</span>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row items-center gap-12 md:gap-24"
+          data-aos="fade-up"
+        >
+          <div class="flex-1 w-full">
+            <div
+              class="image-box bg-slate-100 flex items-center justify-center text-slate-400 aspect-video rounded-xl"
+            >
+             <span><img src="img/aqqah.png" alt=""></span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h4 class="text-pink-main font-bold tracking-widest uppercase mb-4">
+              Ceria Aqiqah
+            </h4>
+            <h2 class="text-3xl font-bold mb-6">Content Creaotor</h2>
+            <p class="text-slate-600 leading-relaxed mb-6 text-justify">
+             Bertanggung jawab dalam merancang dan
+memproduksi konten kreatif harian untuk
+memperkuat branding digital Ceria Aqiqah.
+
+
+Saya mengelola seluruh proses dari ideasi,
+penyusunan storyboard, hingga eksekusi visual
+yang bertujuan meningkatkan kepercayaan
+konsumen dan interaksi audiens di media sosial.
+            </p>
+            <div class="skills-tags flex flex-wrap gap-3">
+              <span>#contentcreator</span><span>#Branding</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row-reverse items-center gap-12 md:gap-24"
+          data-aos="fade-up"
+        >
+          <div class="flex-1 w-full">
+            <div
+              class="image-box bg-slate-100 flex items-center justify-center text-slate-400 aspect-video rounded-xl"
+            >
+             <span><img src="img/najo.png" alt=""></span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h4 class="text-pink-main font-bold tracking-widest uppercase mb-4">
+              YaconiS Gluko
+            </h4>
+            <h2 class="text-3xl font-bold mb-6">Content Creator</h2>
+            <p class="text-slate-600 leading-relaxed mb-6 text-justify">
+              Mengelola strategi konten visual Yaconis Gluko
+dengan fokus pada penyampaian pesan yang
+persuasif dan mudah dipahami.
+
+
+Saya berperan aktif dalam menyusun narasi
+kampanye kreatif serta mengeksekusi produksi
+konten harian yang efektif meningkatkan
+keterlibatan pengikut di media sosial.
+            </p>
+            <div class="skills-tags flex flex-wrap gap-3">
+              <span>#VoiceOver</span><span>#Storytelling</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row items-center gap-12 md:gap-24"
+          data-aos="fade-up"
+        >
+          <div class="flex-1 w-full">
+            <div
+              class="image-box bg-slate-100 flex items-center justify-center text-slate-400 aspect-video rounded-xl"
+            >
+             <span><img src="img/plastik.png" alt=""></span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <h4 class="text-pink-main font-bold tracking-widest uppercase mb-4">
+              Humairaplast
+            </h4>
+            <h2 class="text-3xl font-bold mb-6">Content Creaotor</h2>
+            <p class="text-slate-600 leading-relaxed mb-6 text-justify">
+             Mengelola produksi konten digital untuk
+Humairaplast dengan fokus pada
+penguatan citra perusahaan sebagai
+distributor tepercaya. 
+
+
+Saya menyusun ideasi hingga eksekusi
+visual yang bertujuan untuk
+meningkatkan interaksi pelanggan serta
+mempermudah pengenalan katalog
+produk melalui media sosial.
+            </p>
+            <div class="skills-tags flex flex-wrap gap-3">
+              <span>#ProductDemo</span><span>#SalesStrategy</span
+              ><span>#PersonalBranding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-16">
+        <h2
+          class="text-center text-4xl font-bold font-creative italic text-pink-dark"
+          data-aos="fade-up"
+        >
+          Voice Over Artist
+        </h2>
+
+        <div
+          class="flex flex-col md:flex-row items-center gap-12 md:gap-24"
+          data-aos="fade-up"
+        >
+          <div class="flex-1 order-2 md:order-1">
+            <h4 class="text-pink-main font-bold tracking-widest uppercase mb-4">
+              Brownies Najo Cake
+            </h4>
+            <h2 class="text-3xl font-bold mb-6">Narrative & Commercial VO</h2>
+            <p class="text-slate-600 leading-relaxed mb-6 text-justify">
+              Mengisi suara untuk materi promosi digital, menghidupkan narasi
+              visual produk melalui intonasi yang menggugah selera dan
+              profesional guna memperkuat pesan pemasaran kepada audiens.
+            </p>
+            <div class="skills-tags flex flex-wrap gap-3">
+              <span>#VoiceOver</span>
+              <span>#AudioProduction</span>
+              <span>#CommercialAds</span>
+            </div>
+          </div>
+          <div class="flex-1 order-1 md:order-2">
+            <div
+              class="image-box bg-slate-100 flex items-center justify-center text-slate-400"
+            >
+              <span><img src="img/najo.png" alt=""></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-6 md:px-20 py-20" data-aos="fade-up">
+      <div
+        class="bg-pink-main rounded-[40px] p-10 md:p-20 text-center text-white shadow-2xl shadow-pink-200 relative overflow-hidden"
+      >
+        <div
+          class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20"
+        ></div>
+        <div
+          class="absolute bottom-0 left-0 w-40 h-40 bg-pink-700/20 rounded-full -ml-10 -mb-10"
+        ></div>
+
+        <div class="relative z-10">
+          <h2 class="text-4xl md:text-6xl font-bold font-creative italic mb-6">
+            Let's Work Together
+          </h2>
+          <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto mb-10">
+            Siap membawa brand Anda ke level berikutnya dengan konten kreatif
+            dan strategi live streaming yang tepat?
+          </p>
+          <div
+            class="flex flex-col md:flex-row gap-4 justify-center items-center"
+          >
+            <a
+              href="mailto:fasyasuci08@gmail.com"
+              class="bg-white text-pink-main px-10 py-4 rounded-2xl font-bold text-lg hover:bg-pink-light transition shadow-lg w-full md:w-auto"
+            >
+              Send an Email
+            </a>
+            <a
+              href="https://wa.me/6289526749846"
+              target="_blank"
+              class="border-2 border-white text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-white hover:text-pink-main transition w-full md:w-auto"
+            >
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="px-6 md:px-20 py-20 bg-pink-light/50">
+      <div class="grid md:grid-cols-2 gap-16">
+        <div data-aos="fade-right">
+          <h2 class="text-3xl font-bold font-creative italic mb-8">
+            My Skills
+          </h2>
+
+          <div class="space-y-8">
+            <div>
+              <h4 class="text-pink-dark font-bold mb-4 flex items-center gap-2">
+                <span class="text-2xl">🧠</span> Soft Skills
+              </h4>
+              <div class="skills-tags flex flex-wrap gap-3">
+                <span>Team Work</span>
+                <span>Creativity</span>
+                <span>Adaptability</span>
+                <span>Communication</span>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-pink-dark font-bold mb-4 flex items-center gap-2">
+                <span class="text-2xl">💻</span> Technical Skills
+              </h4>
+              <div class="skills-tags flex flex-wrap gap-3">
+                <span>Microsoft Office</span>
+                <span>Canva Design</span>
+                <span>CapCut Editing</span>
+                <span>Social Media Management</span>
+                <span>Live Streaming Tools</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="contact"
+          data-aos="fade-left"
+          class="glass-card p-10 rounded-3xl shadow-xl"
+        >
+          <h2 class="text-3xl font-bold font-creative italic mb-8">
+            Get In Touch
+          </h2>
+          <div class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div class="bg-pink-main text-white p-3 rounded-full">📞</div>
+              <div>
+                <p class="text-xs text-slate-400">Phone</p>
+                <p class="font-bold">0895 2674 9846</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="bg-pink-main text-white p-3 rounded-full">📧</div>
+              <div>
+                <p class="text-xs text-slate-400">Email</p>
+                <p class="font-bold">fasyasuci08@gmail.com</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="bg-pink-main text-white p-3 rounded-full">📍</div>
+              <div>
+                <p class="text-xs text-slate-400">Location</p>
+                <p class="font-bold">Sleman, Yogyakarta</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8 pt-8 border-t border-pink-100 flex gap-4">
+            <a
+              href="https://www.instagram.com/fasyares?igsh=eG80N3kzejJ6M241"
+              class="text-pink-main hover:scale-110 transition font-bold underline"
+              >Instagram</a
+            >
+           
+            <a
+              href="https://www.tiktok.com/@cutiesbabygurl?_r=1&_t=ZS-95OClF5LkJw"
+              class="text-pink-main hover:scale-110 transition font-bold underline"
+              >TikTok</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-12 bg-pink-light text-center border-t border-pink-100">
+      <div class="text-2xl font-bold font-creative mb-4">
+        Fasya<span class="text-pink-main">.</span>
+      </div>
+      <p class="text-slate-400 text-sm px-6">
+        Let's create something amazing together! <br />
+        Developed with ✨ by
+        <span class="text-pink-main font-semibold">Fasya Suci Restia</span> ©
+        2026<br />
+        Partnered with
+        <a href="https://gmtinnovation.com" class="hover:text-pink-main"
+          >@gmtinnovation.com</a
+        >
+      </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+
+      const textElement = document.getElementById("typing");
+      const words = [
+        "Host Live Streaming",
+        "Professional Voice Over",
+        "Content Creator",
+      ];
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+
+      function type() {
+        const currentWord = words[wordIndex];
+        if (isDeleting) {
+          textElement.textContent = currentWord.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          textElement.textContent = currentWord.substring(0, charIndex + 1);
+          charIndex++;
+        }
+
+        let typeSpeed = isDeleting ? 50 : 150;
+
+        if (!isDeleting && charIndex === currentWord.length) {
+          isDeleting = true;
+          typeSpeed = 1500;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          typeSpeed = 500;
+        }
+        setTimeout(type, typeSpeed);
+      }
+      document.addEventListener("DOMContentLoaded", type);
+    </script>
+  </body>
+</html>
